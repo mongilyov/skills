@@ -14,9 +14,9 @@ bootstrap-only setup-gate bypass and the proposed project settings.
   and untracked, and the key remains outside this repository.
 - [x] 01.3 Document the collection structure and contribution workflow.
   Depends on 01.1. Verify: local Markdown links resolve and `git diff --check` passes.
-- [ ] 01.4 Verify bot access and deliver the setup PR for review by `mongilyov`.
+- [x] 01.4 Verify bot access and deliver the setup PR for review by `mongilyov`.
   Depends on 01.1–01.3. Verify: fetch succeeds, PR is ready, reviewer is requested,
-  and available CI results are inspected.
+  and available CI results are inspected (or access limitations are reported).
 
 ### Verification and delivery
 
@@ -33,6 +33,11 @@ ignored/untracked key-path handling, and whitespace checks pass.
 The user explicitly authorized publishing only the existing initial README
 commit as `master` to initialize the empty remote repository. All setup changes
 are delivered on `codex/adopt-agent-workflow` for review against that base.
+
+Delivery: [PR #1](https://github.com/mongilyov/skills/pull/1) is ready for review
+against `master`; GitHub confirmed the review request for `mongilyov`. Local
+checks pass. CI lookup was attempted twice but network/TLS timeouts prevented
+retrieving results; no passing CI result is claimed.
 
 ## Later increments
 
