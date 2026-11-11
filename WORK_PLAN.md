@@ -30,9 +30,9 @@ Bot authentication and required permissions are verified. Both repositories were
 fetched through the trusted helper. Local Markdown links, submodule URL and pin,
 ignored/untracked key-path handling, and whitespace checks pass.
 
-The remote repository initially had no branches. Delivery requires an initial
-base branch before the setup PR can be opened; publishing that initial commit
-requires an explicit bootstrap exception to the integration-branch push rule.
+The user explicitly authorized publishing only the existing initial README
+commit as `master` to initialize the empty remote repository. All setup changes
+are delivered on `codex/adopt-agent-workflow` for review against that base.
 
 ## Later increments
 
